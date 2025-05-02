@@ -19,5 +19,5 @@ resource "azurerm_storage_account" "example" {
 resource "azurerm_storage_container" "public_container" {
   name                  = "public-container"
   storage_account_name  = azurerm_storage_account.example.name
-  container_access_type = "blob" # Allows public read access for blobs only
+  container_access_type = "blob" 
 }
